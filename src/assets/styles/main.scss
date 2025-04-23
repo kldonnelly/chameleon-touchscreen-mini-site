@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Noto-Sans-Condensed';
+  src: url('/fonts/Noto-Sans-Condensed.ttf.woff') format('woff'),
+    url('/fonts/Noto-Sans-Condensed.ttf.svg#Noto-Sans-Condensed') format('svg'),
+    url('/fonts/Noto-Sans-Condensed.ttf.eot'),
+    url('/fonts/Noto-Sans-Condensed.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  font-size: 32px;
+  font-family: 'Noto-Sans-Condensed', sans-serif;
+  max-height: 100vh;
+  margin: 0;
+}
+
+.page {
+  display: flex;
+  min-height: 100vh;
+  padding: 1rem;
+  background: linear-gradient(#0c2442, #4f7492);
+  flex-wrap: wrap;
+}
+
+.form {
+  background: #0d2543;
+  display: flex;
+
+  .inputs {
+    width: 500px;
+  }
+}
+
+.header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0d2543;
+  color: #fff;
+
+
+
+  .logo-and-message {
+    padding-right: 2rem;
+  }
+}
