@@ -1,0 +1,140 @@
+PUT http://signage.isb.co.nz/EavStorage/storage.svc/data/files/4
+Content-Type: application/json
+
+{
+     "userid" : 1102294283170864759   
+}
+
+###
+GET https://soultech-signage.firebaseio.com/users/Kevin%20Donnelly/TouchScreen/Auckland/NorthShore/Business.json
+
+###
+GET http://signage.isb.co.nz/EavStorage/storage.svc/load/rows?q=files[*;id asc]&totalcount=true
+
+###
+GET https://us-central1-chameleon-isb.cloudfunctions.net/api/business-directory
+x-secret: chameleon-isb-mini-site
+
+
+###
+GET http://localhost/RestFiles/files/gettyimages-50696312-1024x1024.jpg?format=json
+
+###
+
+GET http://localhost/RestFiles/files/TESTUPLOAD.txt?format=json
+
+###
+
+GET http://localhost:5000/hello/kevin?format=json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImRlZThkM2RhZmJmMzEyNjJhYjkzNDdkNjIwMzgzMjE3YWZkOTZjYTMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiODkwOTU0ODA4MDc5LWZlYjFrdXY5b2diNTVyNmZxZG5haHF1Z2xrcHNtdW9pLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiODkwOTU0ODA4MDc5LWZlYjFrdXY5b2diNTVyNmZxZG5haHF1Z2xrcHNtdW9pLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTEwMjI5NDI4MzE3MDg2NDc1OTY1IiwiZW1haWwiOiJrZXZpbi5sLmRvbm5lbGx5QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiRktuYjBnRXNNWnc1dnkydHVwRHZZdyIsIm5hbWUiOiJLZXZpbiBEb25uZWxseSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS0vQUF1RTdtQ3lUWTlQZU1ncGhseGdHSjhrUzBYVVlyQ1Njc1ozUjY1T3h1Vlc9czk2LWMiLCJnaXZlbl9uYW1lIjoiS2V2aW4iLCJmYW1pbHlfbmFtZSI6IkRvbm5lbGx5IiwibG9jYWxlIjoiZW4tR0IiLCJpYXQiOjE1NzUyNjMzNDgsImV4cCI6MTU3NTI2Njk0OCwianRpIjoiZjg4NWRmYjYxNWU4YjZkYTViYzE2YjU1MjQ4ZGJlMzJlYmIwMDBjZCJ9.PdQLSy7QDx7QdfLFvFF1F-fHYKXNJ_ekmHB5e-MZYvudqz0oIrboLZhWMeRl3nx26-pPI1cIQaR5hvjKL29ScNnP-gBz1OOzOfWvjtSbO7ys-p_IDYfxR90fmBvdBc5MwN3qiIfzdLIcVRrPAWAft8uhDkNGcEDHfWPRUqV2Eri_vJW_XGgvCUN281fnAA_JS2njz7omAifTr1_4krjk0f-kehzhiijlz1SVPTxX6-B4ZaFswTqXmjAOyO_3Elvjub3ZiDwxFwrnI5xXDScxuHcqiialewGYFRbbIOQCDJgsXy0Ka52Pp4wP6VSdhCUSjNX2iXH4ffrBZM0wcw7DoA
+
+###
+PUT http://localhost/RestFiles/files/README.txt
+Content-Type: application/json
+
+{
+  //   "TextContents" : "updated text by wayne",
+  //   "StartDate"    : "2020-03-23T18:25:43.511Z",
+     "ExpireDate"   : "2020-04-23T18:25:43.511Z",
+     "Comments"     : "Updated by Kevin"
+}
+
+###
+PUT http://signage.isb.co.nz/RestFiles/files
+
+Content-Type: application/json
+
+{
+  //   "TextContents" : "updated text by wayne",
+  //   "StartDate"    : "2020-03-23T18:25:43.511Z",
+     "id_token"   : "2020-04-23T18:25:43.511Z",
+}
+
+
+
+###
+PUT http://signage.isb.co.nz/RestFiles/files/README.txt
+Content-Type: application/json
+
+{
+  //   "TextContents" : "updated text by wayne",
+     "StartDate"    : "2020-01-04",
+    "ExpireDate"   : "2020-02-24",
+   //  "Comments"     : "Coke video"
+}
+
+###
+
+GET  http://signage.isb.co.nz/RestFiles/files/xxx/Untitled.png?format=json
+
+###
+GET  http://signage.isb.co.nz/RestFiles/files?format=json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImE1NDFkNmVmMDIyZDc3YTIzMThmN2RkNjU3ZjI3NzkzMjAzYmVkNGEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiODkwOTU0ODA4MDc5LW5sY2J0ZjJhOTBqc3VucDBwOWplbWJlcGgyczUxNDhtLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiODkwOTU0ODA4MDc5LW5sY2J0ZjJhOTBqc3VucDBwOWplbWJlcGgyczUxNDhtLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTEwMjI5NDI4MzE3MDg2NDc1OTY1IiwiZW1haWwiOiJrZXZpbi5sLmRvbm5lbGx5QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiR3Vra25GX29GLTJkUU93djFMLW82ZyIsIm5hbWUiOiJLZXZpbiBEb25uZWxseSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS0vQU9oMTRHaFRQN2o2NnhUWlppQkg3bXV4dGRiSzlkVlBBVUY2NVRWV3J5cHM9czk2LWMiLCJnaXZlbl9uYW1lIjoiS2V2aW4iLCJmYW1pbHlfbmFtZSI6IkRvbm5lbGx5IiwibG9jYWxlIjoiZW4tR0IiLCJpYXQiOjE1ODQ0MDI2NjIsImV4cCI6MTU4NDQwNjI2MiwianRpIjoiZmEwM2M1MzM4ZTRlZjJmYzgwODkyZWUyNTE0NThjODRjYzQ5NmE2YiJ9.kJ5JO-BehxyZDhgRYoIIP--Acb6qawLoDdlif5JipGmmbsRUMGp83hwsNpTlAncWs9dn929l_BymYkLyxtaebQ4_AD4Et1-TQR99MWeUTNl_OEavlXi-lxAQiFZoLHWszTofXC6_7U37u6xDNNb2YSM9DkGyz6tSE5xcsWxf6fqHdN2-x1hhPFORGQlRiS6yLmJ-ULebbxd6qmPGDajGZolio9lZeOC0NyMQOh_ULu5CTLT-QIikPiOkSWS5qamCMdgxNCnyF94eER2yJNHpbdeRWgGHWawtz-oMhX1n-Sv7KSu4-0I1Tbe2JHoAR0Zo2FKofjMorKTcoK-bU0lN5w
+
+
+###
+PUT http://signage.isb.co.nz/RestFiles/files/xxx/New Translation.txt
+Authorization: Bearer eyJhbGciOiJIUzI1NiIXVCJ9
+Content-Type: application/json
+
+{
+  //   "TextContents" : "updated text by wayne",
+     "ExpireDate"   : "2025-03-23T18:25:43.511Z",
+     "Comments"     : "bible translation"
+}
+
+
+###
+GET http://localhost/RestFiles/files/xxx/Untitled.png?format=json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIXVCJ9
+Content-Type: application/json
+
+{
+  //   "TextContents" : "updated text by wayne",
+     "ExpireDate"   : "2020-03-23T18:25:43.511Z",
+     "Comments"     : "woman still working out"
+}
+
+###
+DELETE  http://signage.isb.co.nz/RestFiles/files/xxx
+
+###
+GET  http://localhost/RestFiles/files/README.txt?format=json
+Authorization: Bearer  eyJhbGciOiJIUzI1NiIXVCJ9
+
+###
+GET  http://localhost:59436/files/gettyimages-50696312-1024x1024.jpg?format=json
+Authorization: Bearer  eyJhbGciOiJIUzI1NiIXVCJ9
+
+###
+GET  http://localhost:59436/files/gettyimages-50696312-1024x1024.jpg?format=json
+Authorization: Bearer  eyJhbGciOiJIUzI1NiIXVCJ9
+
+
+###
+GET  http://localhost/RestFiles/files?format=json
+Authorization: Bearer  eyJhbGciOiJIUzI1NiIXVCJ9
+
+###
+GET http://signage.isb.co.nz/RestFiles/files/README.txt?format=json
+
+###
+POST http://signage.isb.co.nz/RestFiles/files/123
+
+###
+
+ DELETE http://localhost/EavStorage/storage.svc/data/files/1
+
+###
+
+GET https://www.googleapis.com/oauth2/v3/certs
+###
+
+###
+GET http://signage.isb.co.nz/EavStorage/storage.svc/load/values?q=files(name like "%\1137699883637608426%")[*]
+
+
+###
+
+
+GET http://signage.isb.co.nz/sm_members/masterpage/TableTemplates.css
