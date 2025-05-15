@@ -20,44 +20,51 @@
       ></WeatherCard>
       <QRCodeCard
         :backgroundColor="QRCardbackgroundColor"
-        :src="require('@/assets/images/qr-to-the-mini-site.png')"
+        :src="ImageQRcode"
       ></QRCodeCard>
     </div>
   </div>
 </template>
 
 <script>
-import HomeCard from "./HomeCard";
-import WeatherCard from "./WeatherCard";
-import QRCodeCard from "./QRCodeCard";
+import HomeCard from "./HomeCard.vue";
+import WeatherCard from "./WeatherCard.vue";
+import QRCodeCard from "./QRCodeCard.vue";
+import ImageBus from "@/assets/icons/bus.svg";
+import ImageMap from "@/assets/icons/map.svg";
+import ImageVoucher from "@/assets/icons/voucher.svg";
+import ImageQRcode from "@/assets/images/qr-to-the-mini-site.png";
 
 export default {
   name: "Home",
   components: { HomeCard, WeatherCard, QRCodeCard },
   data: function () {
+ 
     return {
       WeatherCardbackgroundColor: "#dea141",
       QRCardbackgroundColor: "#dea141",
       City: "Auckland",
       classObject: "page-block page-block--main",
       edit: false,
+      ImageQRcode: ImageQRcode,
+
       list: [
         {
           heading: "Public Transport",
           to: "public-transport",
-          Image: require("../assets/icons/bus.svg"),
+          Image: ImageBus,
           backgroundColor: "#2b6eac",
         },
         {
           heading: "Explore North Shore",
           to: "explore-north-shore",
-          Image: require("../assets/icons/map.svg"),
+          Image: ImageMap,
           backgroundColor: "#598d16",
         },
         {
           heading: "Gift Vouchers",
           to: "gift-vouchers",
-          Image: require("../assets/icons/voucher.svg"),
+          Image: ImageVoucher,
           backgroundColor: "#c36e20",
         },
         {
