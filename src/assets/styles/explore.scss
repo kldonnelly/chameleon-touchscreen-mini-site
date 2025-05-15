@@ -1,4 +1,4 @@
-@import "variables";
+@use "variables" as *;
 
 .page--explore {
   max-height: 100vh;
@@ -45,10 +45,10 @@
   background: #2b6eac;
   box-shadow: 0 10px 10px rgba(0,0,0,0.2);
   text-decoration: none;
+  color: inherit;
   @media screen and (max-width: $screen-md-max) {
     flex-direction: column;
   }
-  color: inherit;
   :visited {
     color: inherit;
   }

@@ -152,8 +152,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import "assets/styles/main";
-@import "assets/styles/landing";
-@import "assets/styles/pubic-transport";
-@import "assets/styles/explore";
+@use "assets/styles/main" as *;
+@use "assets/styles/landing" as *;
+@use "assets/styles/pubic-transport" as *;
+@use "assets/styles/explore" as *;
 </style>

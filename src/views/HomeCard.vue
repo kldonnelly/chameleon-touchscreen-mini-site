@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import EditCard from "./EditCard";
+import EditCard from "./EditCard.vue";
 
 export default {
   name: "HomeCard",

@@ -67,9 +67,9 @@
 
 <script>
 //import { getCache, setCache } from "@/services/cache";
-import BusinessCard from "../BusinessDirectoryCard";
-import ItemInput from "../item-input";
-import modal from "../../modal";
+import BusinessCard from "../BusinessDirectoryCard.vue";
+import ItemInput from "../item-input.vue";
+import modal from "../../modal.vue";
 import { inject } from "vue";
 import { StorageView } from "@kevinldonnelly/storage-view-controllers";
 import { StorageUploadView } from "@kevinldonnelly/storage-view-controllers";

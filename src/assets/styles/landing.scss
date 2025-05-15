@@ -1,4 +1,4 @@
-@import 'variables';
+@use 'variables' as *;
 
 .page-block--main {
   width: calc(50% - 2rem);
