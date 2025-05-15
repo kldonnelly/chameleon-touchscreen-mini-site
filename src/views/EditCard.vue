@@ -20,12 +20,13 @@
 </template>
 
 <script>
+import ImageEdit from "../assets/icons/edit/materialicons/24px.svg"
 export default {
   name: "EditCard",
   props: ["edit", "backgroundColor", "classObject"],
   data() {
     return {
-      image_edit: require("../assets/icons/edit/materialicons/24px.svg"),
+      image_edit: ImageEdit,
     };
   },
   methods: {
